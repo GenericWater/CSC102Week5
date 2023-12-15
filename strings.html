@@ -1,0 +1,71 @@
+<!--Assignment 3.1: Palindrome Checker | Lela J. Sanchez-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "strings.js"></script> <!--link to JavaScript file-->
+    <link rel="stylesheet" href="strings.css"> <!--link to CSS file-->
+    <title>Palindrome Checker</title>
+</head>
+<body onclick="playBackgroundMusic();">
+
+    <nav> <!--This allows you to set up webpage navigation like Login, About me, etc...-->
+        
+        <a href = "index.html">Click here for Home Page</a> <!--Link to boards HTML page-->
+        <br> <br> <!--Line break for more space-->
+        <a href = "boards.html">Click here for Boards Page</a> <!--Link to google from lesson-->
+        <br> <br><!--Line break for more space-->
+        <a href = "strings.html">Click here for Palindrome Checker</a> <!--Link to boards HTML page-->
+        <br> <br><!--Line break for more space-->
+        <!--<a href = "https://github.com/GenericWater/CSC102-Week-1-Exs-Fall-Online-3">Click here for GitHub Repo Week 1</a> Link to week 1 github repo-->
+        
+    </nav>
+
+    <h1> Palindrome Checker </h1>
+
+    <form id = "strInput" onsubmit = "return false"> <!--can type in here like a paragraph tag, need the onsubmit for navigation purposes | id is for formatting CSS--> 
+        Enter word or phrase here: <br> <input type = "text" id = "inputString"/>  <!--id is for JavaScript functionality, to call value-->
+        <!--Can start id with a number, CANNOT be done with variables, only ids!-->
+        <br> <br>
+        <input type = "button" value = "Check Your Palindrome Here!" onclick = "checkPalindrome();"/> <!--will display a button and run function from JavaScript file onclick-->
+    </form>
+
+    <br>
+    <div id = "results"> Results for Palindrome Checker print here! </div>
+    <br> 
+
+    <!--Accidentially created unavoidable background music!-->
+    <audio id = "backgroundMusic" controls autoplay loop> <!--includes audio controls for the user-->
+        <source src="Audio/japan-background-music.mp3" type="audio/mpeg"> </source> <!--Japanese style background music! Should be in same directory as HTML-->
+    </audio> <!--close the audio tag-->
+
+    <br>
+
+    <!--Assignment 3.2: User Input Validation-->
+    <form id = "login" onsubmit = "return false">
+        First Name: <br> <input type = "text" id= "firstName" required/>
+        <br>
+        Last Name: <br> <input type ="text" id= "lastName" required/> <!-- required at the end will display a nice mention that the text field is required to fill out-->
+        <br>
+        Zip Code: <br> <input type = "number" id = "zipCode" required/>
+
+        <input type = "button" value = "submit" onclick = "checkCreds();"/>
+    </form>
+
+    <div id = "secretMessage"></div>
+
+    <footer> <!--Footer for end of page-->
+        <p> 
+            Lela Jade Sanchez
+            <br>
+            University of Advancing Technology
+            <br>
+            2625 W Baseline Rd
+            <br>
+            Tempe, AZ 85283
+        </p>
+    </footer>
+
+</body>
+</html>

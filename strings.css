@@ -1,0 +1,140 @@
+/* Assignment 3.1: Palindrome Checker | Lela J. Sanchez */
+
+body
+{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fce8d5;
+    color: #4d2600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1
+{
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff69b4;
+}
+
+form 
+{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Nice box ourline to separate form from body! */
+    text-align: center;
+    color: #ca75a0; /* Change text color */
+}
+
+input[type="text"] /* calls to change input field where text is inputted*/
+{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ff69b4; /* Hot pink border for the input field */
+    border-radius: 5px;
+}
+
+input[type="number"]
+{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ff69b4; /* Hot pink border for the input field */
+    border-radius: 5px;
+}
+
+input[type="button"] 
+{
+    background-color: #ff69b4; /* Hot pink button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+input[type="button"]:hover /* Change button appearance on hover! */
+{
+    background-color: #ff4f8a; /* Darker pink on hover */
+}
+
+#results /* # will make it call to an id */
+{
+    color: #ca75a0; /* Change text color */
+}
+
+#secretMessage
+{
+    color: #ca75a0; /* Change text color */
+}
+
+button:hover /* Couldn't get this to work */
+{
+    background-color: chartreuse;
+    color:white;
+    padding: 16px 32px;
+    transition-duration: 0.4s;
+}
+
+
+/* Week 4 Additions: */
+audio::-webkit-media-controls-panel  /* controls the style of audio panel / body */
+{
+    background-color: #ff4f8a;
+}
+
+audio::-webkit-media-controls-timeline /* Changes slider bar for length of sound */
+{
+    background-color: chartreuse;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+  
+audio::-webkit-media-controls-volume-slider /* Changes color and style of volume slider*/
+{
+    background-color: chartreuse;
+    border-radius: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+nav /* Manipulate nav display*/
+{
+    /*
+    height: 1000px;
+    width: 200px;
+    float: left;
+    padding: 5px;
+    line-height: 30px;
+    */
+    position: fixed; /* or position: absolute; depending on your needs */
+    left: 0;
+    height: 100vh; /* Adjust this according to your design */
+    width: 200px;
+    padding: 5px;
+    line-height: 30px;
+
+    /* Additional display settings besides lesson requirements: */
+    background-image: radial-gradient(rgb(53,219,117), rgb(245,248,55));
+}
+
+footer /* Manipulate footer display*/
+{
+    position: fixed; /* anchors to page*/
+    bottom: 0; /* anchors to bottom of page*/
+    width: 100%;
+    text-align: center;
+    /*-right: 200px;*/
+
+    /* Additional display settings besides lesson requirements: */
+    background-image: radial-gradient(rgb(53,219,117), rgb(245,248,55));
+    color:crimson;
+}
